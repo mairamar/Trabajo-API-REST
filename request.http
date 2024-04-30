@@ -1,0 +1,29 @@
+GET http://localhost:3000/empleados HTTP/1.1
+
+###
+
+GET http://localhost:3000/empleados/1 HTTP/1.1
+
+###
+POST http://localhost:3000/empleados HTTP/1.1
+Content-Type: application/json
+
+{
+   "name": "Oscar, Gomez",
+   "cargo": "Director",
+   "años": 2010
+}
+
+###
+PUT http://localhost:3000/empleados/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "años": "2020"
+}
+
+###
+
+DELETE http://localhost:3000/empleados/4 HTTP/1.1
+
+###
